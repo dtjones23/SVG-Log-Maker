@@ -1,4 +1,4 @@
 <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-            <polygon points="0,200 150,0 300,200" fill="pink" />
-            <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="red" font-size="20">try</text>
+            <polygon points="0,200 150,0 300,200" fill="green" />
+            <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="blue" font-size="20">YET</text>
         </svg>

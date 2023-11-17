@@ -36,4 +36,57 @@ class Triangle extends Shape {
     }
 }
 
-module.exports = {Triangle}
+class Square extends Shape {
+    // sets the colors and properties of the square 
+    constructor () {
+        super();
+        this.textColor ='';
+        this.characters = '';
+    }
+
+    render() {
+        return `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="200" fill="${this.color}" /><text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="${this.textColor}" font-size="20">${this.characters}</text>
+        </svg>`;
+    }
+
+    setTextColor(color){
+        // text color
+        this.textColor=(color)
+    }
+
+    setCharacters(answers){
+        // number of characters
+        this.characters=(answers)
+    }
+}
+
+
+class Circle extends Shape {
+    // sets the colors and properties of the circle
+    constructor () {
+        super();
+        this.textColor ='';
+        this.characters = '';
+    }
+
+    render() {
+        return `<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="150" cy="150" r="150" fill="${this.color}" /><text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="${this.textColor}" font-size="20">${this.characters}</text>
+        </svg>`;
+    }
+
+    setTextColor(color){
+        // text color
+        this.textColor=(color)
+    }
+
+    setCharacters(answers){
+        // number of characters
+        this.characters=(answers)
+    }
+}
+
+
+
+module.exports = {Triangle, Square, Circle}
