@@ -1,4 +1,3 @@
-// Export  `Triangle`, `Circle`, and `Square` classes
 class Shape {
     
     // builds the colors of the logo
@@ -19,9 +18,7 @@ class Triangle extends Shape {
     }
 
     render() {
-        return `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-            <polygon points="0,200 150,0 300,200" fill="${this.color}" />
-            <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="${this.textColor}" font-size="20">${this.characters}</text>
+        return `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg"><polygon points="0,200 150,0 300,200" fill="${this.color}" /><text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="${this.textColor}" font-size="40">${this.characters}</text>
         </svg>`;
     }
 
@@ -30,9 +27,9 @@ class Triangle extends Shape {
         this.textColor=(color)
     }
 
-    setCharacters(answers){
+    setCharacters(characters){
         // number of characters
-        this.characters=(answers)
+        this.characters=(characters)
     }
 }
 
@@ -45,8 +42,7 @@ class Square extends Shape {
     }
 
     render() {
-        return `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-            <rect width="300" height="200" fill="${this.color}" /><text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="${this.textColor}" font-size="20">${this.characters}</text>
+        return `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" fill="${this.color}" /><text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="${this.textColor}" font-size="40">${this.characters}</text>
         </svg>`;
     }
 
@@ -55,9 +51,9 @@ class Square extends Shape {
         this.textColor=(color)
     }
 
-    setCharacters(answers){
+    setCharacters(characters){
         // number of characters
-        this.characters=(answers)
+        this.characters=(characters)
     }
 }
 
@@ -71,8 +67,7 @@ class Circle extends Shape {
     }
 
     render() {
-        return `<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="150" cy="150" r="150" fill="${this.color}" /><text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="${this.textColor}" font-size="20">${this.characters}</text>
+        return `<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg"><circle cx="150" cy="150" r="150" fill="${this.color}" /><text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="${this.textColor}" font-size="40">${this.characters}</text>
         </svg>`;
     }
 
@@ -81,12 +76,11 @@ class Circle extends Shape {
         this.textColor=(color)
     }
 
-    setCharacters(answers){
+    setCharacters(characters){
         // number of characters
-        this.characters=(answers)
+        this.characters=(characters)
     }
 }
-
 
 
 module.exports = {Triangle, Square, Circle}

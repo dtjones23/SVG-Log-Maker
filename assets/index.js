@@ -32,10 +32,10 @@ async function init() {
                 message: 'Enter a color for text.'
             },
         ])
-        const markdown = getSvgCode(answers)
+        const svgCode = getSvgCode(answers)
         // gets the svg based on selected shape
 
-        await fs.writeFile('logo.svg', markdown)
+        await fs.writeFile('logo.svg', svgCode)
         // function to create logo file
 
         // logs when successful
@@ -44,7 +44,6 @@ async function init() {
         console.error(error);
     }
 }
-
 function getSvgCode(answers) {
     // function that generates the shapes and their properties
 
